@@ -1,0 +1,21 @@
+﻿@model List<AspHomework.Core.Modules.Reservation.Models.ReservationDateTime>
+
+@if (Model.Any(x => x.IsAvailable))
+{
+    <div class="row">
+
+        @foreach (var date in Model)
+        {
+            <div class="col-xs-6 col-md-3">
+                <div class="reservation-date @(date.IsAvailable ? "available" : "not-available")">
+                    <span class="text">@date.From.ToString("HH:mm") - @date.Until.ToString("HH:mm")</span>
+                    <span class="value">@date.From.ToString("O")</span>
+                </div>
+            </div>
+        }
+    </div>
+}
+else
+{
+    <h2>There are no available dates for this day.</h2>
+}

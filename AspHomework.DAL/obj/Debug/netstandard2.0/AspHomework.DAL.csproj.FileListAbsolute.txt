@@ -1,0 +1,9 @@
+/Users/vladimirmrkacek/Documents/Projects/AspHomework/AspHomework.DAL/bin/Debug/netstandard2.0/AspHomework.DAL.deps.json
+/Users/vladimirmrkacek/Documents/Projects/AspHomework/AspHomework.DAL/bin/Debug/netstandard2.0/AspHomework.DAL.dll
+/Users/vladimirmrkacek/Documents/Projects/AspHomework/AspHomework.DAL/bin/Debug/netstandard2.0/AspHomework.DAL.pdb
+/Users/vladimirmrkacek/Documents/Projects/AspHomework/AspHomework.DAL/obj/Debug/netstandard2.0/AspHomework.DAL.csprojAssemblyReference.cache
+/Users/vladimirmrkacek/Documents/Projects/AspHomework/AspHomework.DAL/obj/Debug/netstandard2.0/AspHomework.DAL.csproj.CoreCompileInputs.cache
+/Users/vladimirmrkacek/Documents/Projects/AspHomework/AspHomework.DAL/obj/Debug/netstandard2.0/AspHomework.DAL.AssemblyInfoInputs.cache
+/Users/vladimirmrkacek/Documents/Projects/AspHomework/AspHomework.DAL/obj/Debug/netstandard2.0/AspHomework.DAL.AssemblyInfo.cs
+/Users/vladimirmrkacek/Documents/Projects/AspHomework/AspHomework.DAL/obj/Debug/netstandard2.0/AspHomework.DAL.dll
+/Users/vladimirmrkacek/Documents/Projects/AspHomework/AspHomework.DAL/obj/Debug/netstandard2.0/AspHomework.DAL.pdb

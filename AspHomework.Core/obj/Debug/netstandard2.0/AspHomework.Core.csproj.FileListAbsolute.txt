@@ -1,0 +1,14 @@
+/Users/vladimirmrkacek/Documents/Projects/AspHomework/AspHomework.Core/bin/Debug/netstandard2.0/AspHomework.Core.deps.json
+/Users/vladimirmrkacek/Documents/Projects/AspHomework/AspHomework.Core/bin/Debug/netstandard2.0/AspHomework.Core.dll
+/Users/vladimirmrkacek/Documents/Projects/AspHomework/AspHomework.Core/bin/Debug/netstandard2.0/AspHomework.Core.pdb
+/Users/vladimirmrkacek/Documents/Projects/AspHomework/AspHomework.Core/obj/Debug/netstandard2.0/AspHomework.Core.csprojAssemblyReference.cache
+/Users/vladimirmrkacek/Documents/Projects/AspHomework/AspHomework.Core/obj/Debug/netstandard2.0/AspHomework.Core.csproj.CoreCompileInputs.cache
+/Users/vladimirmrkacek/Documents/Projects/AspHomework/AspHomework.Core/obj/Debug/netstandard2.0/AspHomework.Core.AssemblyInfoInputs.cache
+/Users/vladimirmrkacek/Documents/Projects/AspHomework/AspHomework.Core/obj/Debug/netstandard2.0/AspHomework.Core.AssemblyInfo.cs
+/Users/vladimirmrkacek/Documents/Projects/AspHomework/AspHomework.Core/obj/Debug/netstandard2.0/AspHomework.Core.dll
+/Users/vladimirmrkacek/Documents/Projects/AspHomework/AspHomework.Core/obj/Debug/netstandard2.0/AspHomework.Core.pdb
+/Users/vladimirmrkacek/Documents/Projects/AspHomework/AspHomework.Core/bin/Debug/netstandard2.0/AspHomework.DAL.dll
+/Users/vladimirmrkacek/Documents/Projects/AspHomework/AspHomework.Core/bin/Debug/netstandard2.0/AspHomework.DAL.pdb
+/Users/vladimirmrkacek/Documents/Projects/AspHomework/AspHomework.Core/obj/Debug/netstandard2.0/AspHomework.Core.csproj.CopyComplete
+/Users/vladimirmrkacek/Documents/Projects/AspHomework/AspHomework.Core/bin/Debug/netstandard2.0/Microsoft.AspNetCore.Mvc.Abstractions.dll
+/Users/vladimirmrkacek/Documents/Projects/AspHomework/AspHomework.Core/bin/Debug/netstandard2.0/Microsoft.AspNetCore.Mvc.Abstractions.xml

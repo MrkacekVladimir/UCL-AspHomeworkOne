@@ -1,0 +1,53 @@
+@model AspHomework.WebUI.ViewModels.Reservations.ConfirmationViewModel
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">@Model.Room.Name</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Opening hours: @(Model.Room.OpenFrom):00 - @(Model.Room.OpenTo):00</h6>
+                <p class="card-text">Selected date: @Model.ReservationDate.ToString()</p>
+                <p class="card-text">@Model.Room.Description</p>                
+            </div>                                    
+        </div>
+    </div>    
+    <div class="col-md-6">
+        <h2>Finish your reservation</h2>
+        <form method="post" asp-action="Confirmation">
+            <div asp-validation-summary="All"></div>
+
+            <input type="hidden" asp-for="RoomId"/>
+            <input type="hidden" asp-for="ReservationDate"/>
+
+            <div class="form-group">
+                <label asp-for="Email"></label>
+                <input asp-for="Email" class="form-control"/>
+            </div>
+            <div class="form-group">
+                <label asp-for="FirstName"></label>
+                <input asp-for="FirstName" class="form-control"/>
+            </div>
+            <div class="form-group">
+                <label asp-for="LastName"></label>
+                <input asp-for="LastName" class="form-control"/>
+            </div>
+            <div class="form-group">
+                <label asp-for="Phone"></label>
+                <input asp-for="Phone" class="form-control"/>
+            </div>
+            <div class="form-group">
+                <label asp-for="Note"></label>
+                <textarea asp-for="Note" class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-success">Create a reservation</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+@section Scripts{
+<partial name="_ValidationScriptsPartial"/>    
+}

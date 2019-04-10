@@ -1,0 +1,92 @@
+﻿@model AspHomework.WebUI.ViewModels.Reservations.NewReservationViewModel
+
+<form id="chooseReservationDateForm" method="post" asp-action="New" asp-controller="Reservations">
+    <div class="container-fluid">
+        <div asp-validation-summary="All"></div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">@Model.Room.Name</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Opening hours: @(Model.Room.OpenFrom):00 - @(Model.Room.OpenTo):00</h6>
+                        <p class="card-text">@Model.Room.Description</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Reservation date</li>
+                        <li class="list-group-item">
+                            <input class="form-control" asp-for="SelectedDate"/>
+                        </li>
+                    </ul>
+                    <div class="card-body">
+                        <a asp-action="Index" asp-controller="Rooms" class="card-link">Back to all rooms</a>                        
+                    </div>                    
+                </div>
+            </div>
+            <div class="col-md-8">
+                @if (TempData["ErrorMessage"] != null)
+                {
+                    <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+                }
+                <div id="chooseDateMessage" class="alert alert-danger" style="display: none;">
+                    You need to choose date in order to continue.
+                </div>
+                <div class="reservation-dates-container">
+                    <partial name="_ReservationTimeList" model="Model.Dates"/>    
+                </div>         
+                <div class="text-right">
+                    <input class="btn btn-primary" type="submit" value="Next"/>
+                </div>                
+            </div>
+            <input type="hidden" asp-for="SelectedReservationTime"/>
+            <input type="hidden" asp-for="RoomId"/>
+        </div>
+    </div>    
+</form>
+
+@section Scripts{
+    <script type="text/javascript">
+        let $timeInput = $("#SelectedReservationTime");
+        let $selectedDate = null;
+        let $datesContainer = $(".reservation-dates-container");
+
+        $(document).on("click",
+            ".reservation-date.available",
+            function(e) {
+                if ($selectedDate) {
+                    $selectedDate.removeClass("selected");
+                }
+
+                $("#chooseDateMessage").hide();
+                $selectedDate = $(this);
+                $selectedDate.addClass("selected");
+                let value = $selectedDate.find(".value").text();
+                $timeInput.val(value);
+            });
+
+        $("#chooseReservationDateForm").on("submit",
+            function(e) {
+                if ($selectedDate == null) {
+                    $("#chooseDateMessage").show();
+                    e.preventDefault();
+                    return false;
+                }
+
+                return true;
+            });
+
+        $('#SelectedDate').change(function() {
+            let dateValue = $('#SelectedDate').val();
+            $("#chooseDateMessage").hide();
+            $(this).attr('value', dateValue);
+            $selectedDate = null;
+            $datesContainer.load("@Url.Action("GetDates","Reservations")",
+                {
+                    roomId: @Model.RoomId,
+                    dateWhen: dateValue
+                },
+                function(result) {
+                    
+                });                                    
+        });
+    </script>
+}

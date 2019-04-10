@@ -1,0 +1,61 @@
+﻿<Properties StartupConfiguration="{481931E7-41C5-454D-BFCF-518C4B39E9AD}|Default">
+  <MonoDevelop.Ide.ItemProperties.AspHomework.WebUI PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="AspHomework.WebUI/Views/Reservations/New.cshtml">
+    <Files>
+      <File FileName="AspHomework.WebUI/Views/Reservations/New.cshtml" Line="17" Column="30" />
+      <File FileName="AspHomework.WebUI/ViewModels/Reservations/NewReservationViewModel.cs" Line="28" Column="1" />
+      <File FileName="AspHomework.WebUI/Controllers/ReservationsController.cs" Line="50" Column="13" />
+      <File FileName="AspHomework.Core/Modules/Reservation/Services/ReservationService.cs" Line="28" Column="1" />
+      <File FileName="AspHomework.DAL/Repositories/Interfaces/IRoomRepository.cs" Line="11" Column="6" />
+      <File FileName="AspHomework.WebUI/wwwroot/css/site.css" Line="76" Column="22" />
+      <File FileName="AspHomework.WebUI/Views/Reservations/_ReservationTimeList.cshtml" Line="21" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="AspHomework" expanded="True">
+            <Node name="AspHomework.Core" expanded="True">
+              <Node name="Modules" expanded="True">
+                <Node name="Reservation" expanded="True">
+                  <Node name="Models" expanded="True" />
+                  <Node name="Services" expanded="True" />
+                </Node>
+              </Node>
+            </Node>
+            <Node name="AspHomework.DAL" expanded="True">
+              <Node name="Repositories" expanded="True">
+                <Node name="Interfaces" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="AspHomework.WebAPI" expanded="True">
+              <Node name="Controllers" expanded="True" />
+            </Node>
+            <Node name="AspHomework.WebUI" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="ViewModels" expanded="True">
+                <Node name="Reservations" expanded="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="Reservations" expanded="True">
+                  <Node name="New.cshtml" selected="True" />
+                </Node>
+                <Node name="Shared" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+                <Node name="js" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.AspHomework.Tests PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

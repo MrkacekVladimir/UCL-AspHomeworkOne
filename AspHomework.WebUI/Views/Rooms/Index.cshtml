@@ -1,0 +1,21 @@
+﻿@model AspHomework.WebUI.ViewModels.Rooms.IndexViewModel
+
+<div class="container-fluid">
+    <div class="row">
+        @foreach (var room in Model.Rooms)
+        {
+        <div class="col-md-4">
+            <div class="card room-card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">@room.Name</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Opening hours: @(room.OpenFrom):00 - @(room.OpenTo):00</h6>
+                    <p data-toggle="tooltip" title="@room.Description" class="card-text">
+                        @(room.Description.Length > 200 ? $"{room.Description.Substring(0, 197)}..." : room.Description)
+                    </p>
+                    <a asp-action="New" asp-controller="Reservations" asp-route-id="@room.Id" class="card-link">Book</a>
+                </div> 
+            </div>
+        </div>
+        }
+    </div>
+</div>
